@@ -1,6 +1,6 @@
 private double fractionLength = .8; 
-private int smallestBranch = 3; 
-private double branchAngle = .1;  
+private int smallestBranch = 6; 
+private double branchAngle = .2;  
 public void setup() 
 {   
   size(640, 480);    
@@ -17,8 +17,8 @@ public void keyPressed(){
   if(key == 'a'){branchAngle-=0.05;}
   if(key == 'w' && fractionLength<0.8){fractionLength+=0.05;}   
   if(key == 's' && fractionLength>0.05){fractionLength-=0.05;}
-  if(keyCode == UP && smallestBranch<5){smallestBranch+=0.1;}
-  if(keyCode == DOWN && smallestBranch>0){smallestBranch-=0.1;}
+  if(keyCode == UP && smallestBranch<7){smallestBranch+=0.1;}
+  if(keyCode == DOWN && smallestBranch>3){smallestBranch-=0.1;}
 
   
 }
